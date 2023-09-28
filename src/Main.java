@@ -9,6 +9,7 @@ public class Main
        double F = 0.0;
        boolean done = false;
 
+
        do{
            System.out.print("Enter Celcius number: ");
            if(in.hasNextDouble())
@@ -22,7 +23,7 @@ public class Main
            }
            else
            {
-               System.out.println("You entered " + C);
+
                System.out.println("This is not a valid input");
                in.nextLine();
            }
