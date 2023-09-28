@@ -1,0 +1,31 @@
+import java.util.Scanner;
+
+public class Main
+{
+    public static void main(String[] args)
+    {
+       Scanner in = new Scanner(System.in);
+       double C = 0.0;
+       double F = 0.0;
+       boolean done = false;
+
+       do{
+           System.out.print("Enter Celcius number: ");
+           if(in.hasNextDouble())
+           {
+               C = in.nextDouble();
+               F = (C * 9/5) + 32;
+               in.nextLine();
+               System.out.println("You entered " + C);
+               System.out.println(C + " Converted to Fahrenheit is " + F);
+               done = true;
+           }
+           else
+           {
+               System.out.println("You entered " + C);
+               System.out.println("This is not a valid input");
+               in.nextLine();
+           }
+       }while (!done);
+    }
+}
