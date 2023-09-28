@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Main
+public class CtoFConverter
 {
     public static void main(String[] args)
     {
@@ -11,7 +11,7 @@ public class Main
 
 
        do{
-           System.out.print("Enter Celcius number: ");
+           System.out.print("Enter Celsius number: ");
            if(in.hasNextDouble())
            {
                C = in.nextDouble();
