@@ -5,16 +5,16 @@ public class RectangleInfo
     public static void main(String[] args)
     {
         Scanner in = new Scanner(System.in);
-        int height = 0;
-        int width = 0;
+        double height = 0;
+        double width = 0;
         boolean done = false;
         boolean finish = false;
 
         do{
             System.out.print("Enter the height of the rectangle: ");
-            if(in.hasNextInt())
+            if(in.hasNextDouble())
             {
-                height = in.nextInt();
+                height = in.nextDouble();
                 in.nextLine();
                 done = true;
                 System.out.println("The height of the rectangle is " + height);
@@ -28,9 +28,9 @@ public class RectangleInfo
 
         do{
             System.out.print("Enter the width of the rectangle: ");
-            if(in.hasNextInt())
+            if(in.hasNextDouble())
             {
-                width = in.nextInt();
+                width = in.nextDouble();
                 in.nextLine();
                 finish = true;
                 System.out.println("The width of the rectangle is " + width);
@@ -42,9 +42,9 @@ public class RectangleInfo
             }
         }while (!finish);
 
-        int length = (height * height) + (width * width);
-        int area = width * height;
-        int perimeter = (width + height) * 2;
+        double length = (height * height) + (width * width);
+        double area = width * height;
+        double perimeter = (width + height) * 2;
 
 
         System.out.println("The length of the rectangle is " + length);
