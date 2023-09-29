@@ -35,7 +35,7 @@ public class FuelCosts {
             {
                 fuelEff = in.nextDouble();
                 in.nextLine();
-                System.out.println("The number of gallons in your tank is " + fuelEff);
+                System.out.println("Your fuel efficiency is " + fuelEff);
                 finish = true;
             }
             else
